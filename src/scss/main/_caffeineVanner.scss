@@ -1,0 +1,39 @@
+.vannerBox {
+    display: flex;
+    flex-direction: row;  // Align elements horizontally
+    padding: 17px 24px;
+    justify-content: space-between;
+    align-items: center;  // Center items vertically
+    gap: 20px;  // Adjust gap as needed for spacing
+    border-radius: 8px;
+    background: var(--coffeColor, #310C0C);
+
+    .vannerTitle {
+        color: #FFF;
+        /* M16 */
+        font-family: Pretendard;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+        align-self: stretch;
+    }
+
+    .vannerContent {
+        color: var(--WhiteColor, #FFF);
+
+        /* sB12 */
+        font-family: Pretendard;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        align-self: stretch;
+    }
+
+    .vanner-coffee-image {
+        width: 95px;
+        height: 95px;
+    }
+}
