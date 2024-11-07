@@ -1,0 +1,29 @@
+.mainVanner {
+    display: flow-root;
+    width: 390px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    background: var(--ThirdColor, #E9FEFF);
+    .todayWeather{
+        align-self: stretch;
+        color: var(--black, #121212);
+
+        /* M16 */
+        font-family: Pretendard;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+    .weather-vanner-img{
+        display: flex;
+padding: 17px 24px;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 10px;
+align-self: stretch;
+    }
+}
