@@ -8,12 +8,14 @@ const MainVanner = () => {
 
     return (
       <div className="mainVanner">
-        <div className="todayWeather">오늘의 날씨</div>
-        <img src={weatherVanner} alt="날씨 배너" className="weather-vanner-img"></img>
-
-        <div className="todayCaffeine">오늘의 카페인</div>
-        <CaffeineVanner/>
-
+        <div className="weather-vanner">
+          <div className="todayWeather">오늘의 날씨</div>
+          <img src={weatherVanner} alt="날씨 배너" className="weather-vanner-img"></img>
+        </div>
+        <div className="caffeineVanner">
+          <div className="todayCaffeine">오늘의 카페인</div>
+          <CaffeineVanner/>
+        </div>
       </div>  
     );
 };

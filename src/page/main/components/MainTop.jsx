@@ -9,7 +9,7 @@ const MainTop = () => {
     return (
       <div className="mainTopPage">
         <div className="main-title">{title}</div>
-        <div className="target-water">{targetWater}</div>
+        <div className="target-water">오늘의 목표 섭취량: {targetWater}</div>
         <img src={warterImage} alt="물 이미지" className="main-water-image"></img>
       </div>  
     );
