@@ -1,0 +1,17 @@
+.recordDrink{
+    display: flex;
+    padding: 0px 20px;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+
+    .drink{
+        display: flex;
+        padding: 19px 39px;
+        align-items: center;
+        gap: 10px;
+        border-radius: 5px;
+        border: 2px solid var(--NeutralColor, #D4ECED);
+        background: var(--WhiteColor, #FFF);
+    }
+}
