@@ -1,17 +1,15 @@
-.recordDrink{
-    display: flex;
-    padding: 0px 20px;
-    align-items: flex-start;
+// grid란? 쉽게 말해서 HTML에서 <div class=”container”></div> 컨테이너를 사용하는 것과 같다. 
+// display: flex; 랑 비슷한 구조이지만 flex는 1차원적, grid는 2차원적 배열이라고 볼 수 있다.
+// 자세한 내용은 "https://studiomeal.com/archives/533" 여기서 참고 할 수 있다.
+.record-drink-grid {
+    width: 348.1px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; // 필요에 따라 크기 조정
+    grid-template-rows: 1fr 1fr;
     gap: 10px;
-    align-self: stretch;
-
-    .drink{
-        display: flex;
-        padding: 19px 39px;
-        align-items: center;
-        gap: 10px;
-        border-radius: 5px;
-        border: 2px solid var(--NeutralColor, #D4ECED);
-        background: var(--WhiteColor, #FFF);
-    }
+    padding: 40px;
+    align-items: center;
+    border-radius: 5px;
+    background: var(--WhiteColor, #FFF);
 }
+  
