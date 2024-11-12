@@ -3,9 +3,9 @@ import { createBrowserRouter } from "react-router-dom";
 import Loading from "../components/Loading";
 import Layout from "../layout/Layout";
 
+const Index = lazy(() => import("../page/index"))
 const Main = lazy(() => import("../page/main"));
 const Record = lazy(() => import("../page/record"));
-
 const Statistic = lazy(() => import("../page/statistic"));
 
 const router = createBrowserRouter([
@@ -14,6 +14,15 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
+        element: (
+          <Suspense fallback={<Loading />}>
+            <Index />
+          </Suspense>
+        ),
+      },
+
+      {
+        path: "main",
         element: (
           <Suspense fallback={<Loading />}>
             <Main />
