@@ -1,0 +1,35 @@
+.drink-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 110px; 
+    height: 112px;
+    border-radius: 5px;
+    border: 2px solid var(--NeutralColor, #D4ECED);
+    background: var(--WhiteColor, #FFF);
+  
+    &.selected {
+      border-color: #ff5757; // 선택시 보더 색상
+      background-color: #ffebeb; // 선택시 배경색
+    }
+  
+    .drink-icon {
+      width: 32.7px;
+      height: 43.41px;
+      margin-bottom: 12px;
+    }
+  
+    .drink-name {
+        color: var(--black, #121212);
+        text-align: center;
+        /* M16 */
+        font-family: Pretendard;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+  }
+  
