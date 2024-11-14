@@ -1,0 +1,12 @@
+.table {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.amoutTable {
+  color: blue;
+}
+
+.directAmount {
+  color: aqua;
+}

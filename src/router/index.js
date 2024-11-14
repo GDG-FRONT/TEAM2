@@ -1,19 +1,30 @@
-import React, { lazy, Suspense } from "react";
-import { createBrowserRouter } from "react-router-dom";
-import Loading from "../components/Loading";
-import Layout from "../layout/Layout";
+import React, { lazy, Suspense } from 'react';
+import { createBrowserRouter } from 'react-router-dom';
+import Loading from '../components/Loading';
+import Layout from '../layout/Layout';
 
-const Index = lazy(() => import("../page/index"))
-const Main = lazy(() => import("../page/main"));
-const Record = lazy(() => import("../page/record"));
-const Statistic = lazy(() => import("../page/statistic"));
+const Index = lazy(() => import('../page/index'));
+const Main = lazy(() => import('../page/main'));
+const Record = lazy(() => import('../page/record'));
+const Statistic = lazy(() => import('../page/statistic'));
+
+//음료페이지//
+const WaterPage = lazy(() => import('../page/route/components/waterPage'));
+const CoffeePage = lazy(() => import('../page/route/components/coffeePage'));
+const JuicePage = lazy(() => import('../page/route/components/juicePage'));
+const MilkPage = lazy(() => import('../page/route/components/milkPage'));
+const SodaPage = lazy(() => import('../page/route/components/sodaPage'));
+const TeaPage = lazy(() => import('../page/route/components/teaPage'));
+const Warning = lazy(() => import('../page/route/components/warning'));
+const Keypad = lazy(() => import('../page/route/components/keypad.jsx'));
+const KeypadObj = lazy(() => import('../page/route/components/keypad-obj.jsx'));
 
 const router = createBrowserRouter([
   {
     element: <Layout />,
     children: [
       {
-        path: "/",
+        path: '/',
         element: (
           <Suspense fallback={<Loading />}>
             <Index />
@@ -22,7 +33,7 @@ const router = createBrowserRouter([
       },
 
       {
-        path: "main",
+        path: 'main',
         element: (
           <Suspense fallback={<Loading />}>
             <Main />
@@ -31,7 +42,7 @@ const router = createBrowserRouter([
       },
 
       {
-        path: "record",
+        path: 'record',
         element: (
           <Suspense fallback={<Loading />}>
             <Record />
@@ -40,10 +51,84 @@ const router = createBrowserRouter([
       },
 
       {
-        path: "statistic",
+        path: 'statistic',
         element: (
           <Suspense fallback={<Loading />}>
             <Statistic />
+          </Suspense>
+        ),
+      },
+
+      //
+      {
+        path: 'water',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <WaterPage />
+          </Suspense>
+        ),
+      },
+      {
+        path: 'coffee',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <CoffeePage />
+          </Suspense>
+        ),
+      },
+      {
+        path: 'juice',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <JuicePage />
+          </Suspense>
+        ),
+      },
+      {
+        path: 'milk',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <MilkPage />
+          </Suspense>
+        ),
+      },
+      {
+        path: 'soda',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <SodaPage />
+          </Suspense>
+        ),
+      },
+      {
+        path: 'tea',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <TeaPage />
+          </Suspense>
+        ),
+      },
+      {
+        path: 'keypad',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <Keypad />
+          </Suspense>
+        ),
+      },
+      {
+        path: 'keypadObj',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <KeypadObj />
+          </Suspense>
+        ),
+      },
+      {
+        path: 'warning',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <Warning />
           </Suspense>
         ),
       },
