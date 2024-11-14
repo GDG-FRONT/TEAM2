@@ -1,0 +1,38 @@
+.mainTopPage{
+    display: flex;
+    padding: 72.057px 92px 20.5px 92px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 27.443px;
+    align-self: stretch;
+    background: var(--ThirdColor, #E9FEFF);
+    .main-title {
+        color: var(--black, #121212);
+        text-align: center;
+
+        /* sB16 */
+        font-family: Pretendard;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: uppercase;
+        align-self: stretch;
+    }
+    .target-water{
+        align-self: stretch;
+        color: var(--black, #121212);
+        text-align: center;
+
+        /* M12 */
+        font-family: Pretendard;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+        background: var(--ThirdColor, #E9FEFF);
+
+    }
+}

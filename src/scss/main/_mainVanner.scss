@@ -1,0 +1,30 @@
+.mainVanner {
+    display: flex;
+    padding: 40px 20px;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    background: var(--ThirdColor, #E9FEFF);
+    .weather-vanner{
+        gap: 12px;
+        width: 100%;
+    }
+    .todayWeather{
+        color: var(--black, #121212);
+        /* M16 */
+        font-family: Pretendard;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+        gap: 12px;
+    }
+    .caffeineVanner{
+        gap: 12px;
+        width: 100%;
+    }
+    
+}
