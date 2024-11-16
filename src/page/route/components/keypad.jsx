@@ -1,6 +1,6 @@
 import React from 'react';
 import Table from './table';
-import TopBar from '../../main/components/topBar';
+import TopBar from './topBar';
 import AddBtn from './addBtn';
 import KeypadObj from './keypad-obj';
 

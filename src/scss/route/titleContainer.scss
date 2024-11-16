@@ -1,0 +1,31 @@
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  gap: 10px;
+  .titleName {
+    align-self: stretch;
+    color: var(--black, #121212);
+    text-align: center;
+
+    /* M16 */
+    font-family: Pretendard;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  .titleA {
+    color: var(--black, #121212);
+
+    /* sB22 */
+    font-family: Pretendard;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
