@@ -1,0 +1,29 @@
+//topbar와 addbtn
+
+.topText {
+  padding: 6px 20px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  align-self: stretch;
+  color: var(--black, #121212);
+
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+
+  img {
+    width: 1rem;
+  }
+}
+
+////////
+
+.add {
+  color: red;
+  display: flex;
+  // bottom: 100;
+}
