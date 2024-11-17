@@ -1,0 +1,56 @@
+
+.caffeine-container {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    margin: 16px auto;
+    width: 400px;
+    height: 115px;
+    border: 2px solid #9f9f9f61;
+    padding: 5px;
+    display: flex; // 가로 배열을 위해 추가
+    align-items: center; // 세로 중앙 정렬
+    justify-content: space-between; // 요소들 사이 간격 균등 분배
+}
+
+// 오늘 카페인 섭취량 컨테이너
+.caffeine-amount-container {
+    margin: 12px;
+    margin-top: 2px;
+}
+
+// 1. 오늘 카페인 섭취량
+.caffeine-amount-label {
+    font-size: 12px;
+    margin: 8px 0;
+    color: #333;
+}
+
+// 2. 오늘 카페인 섭취량(ML)
+.caffeine-amount {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 8px 0 0 0; //위, 오른쪽, 아래, 왼쪽 구분할것
+    color: #333;
+}
+
+// 1. 최근 카페인 섭취량이 더 늘어났어요
+.caffeine-label {
+    font-size: 10px;
+    font-weight: bold;
+    margin: 3px 0;
+    color: #333;
+}
+
+// 2.내일은 카페인 대신 물 섭취를 권장드려요.
+.caffeine-suggest-label {
+    font-size: 8px;
+    font-weight: bold;
+    margin:5px 0;
+    color: #333;
+}
+
+.caffeine-arrow-container {
+    width:40px;
+    height:40px;
+    margin-right: 10px;
+}
