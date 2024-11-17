@@ -3,7 +3,7 @@ import '../../../scss/route/Btn.scss';
 
 const AddBtn = () => {
   return (
-    <div>
+    <div class="addContainer">
       <button class="add">추가하기</button>
     </div>
   );
