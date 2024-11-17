@@ -1,5 +1,5 @@
 import React from 'react';
-import TopBar from '../../main/components/topBar';
+import TopBar from './topBar';
 import Table from './table';
 import AddBtn from './addBtn';
 
