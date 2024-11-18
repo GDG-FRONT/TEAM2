@@ -7,8 +7,10 @@ const SodaPage = () => {
   return (
     <div>
       <TopBar></TopBar>
-      <div>탄산수</div>
-      <div>150ml</div>
+      <div class="titleContainer">
+        <div class="titleName">탄산수</div>
+        <div class="titleA">150ml</div>
+      </div>
       <Table></Table>
       <AddBtn></AddBtn>
     </div>

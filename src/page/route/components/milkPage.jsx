@@ -7,8 +7,10 @@ const MilkPage = () => {
   return (
     <div>
       <TopBar></TopBar>
-      <div>우유</div>
-      <div>150ml</div>
+      <div class="titleContainer">
+        <div class="titleName">우유</div>
+        <div class="titleA">150ml</div>
+      </div>
       <Table></Table>
       <AddBtn></AddBtn>
     </div>

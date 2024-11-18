@@ -23,10 +23,13 @@
 ////////
 
 .addContainer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
   display: flex;
   padding: 27px 20px;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: space-around;
   gap: 10px;
   align-self: stretch;
 
@@ -52,4 +55,8 @@
     line-height: normal;
     text-transform: uppercase;
   }
+}
+
+.staticPosition {
+  position: static;
 }

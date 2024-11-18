@@ -7,8 +7,10 @@ const CoffeePage = () => {
   return (
     <div>
       <TopBar></TopBar>
-      <div>커피</div>
-      <div>150ml</div>
+      <div class="titleContainer">
+        <div class="titleName">커피</div>
+        <div class="titleA">150ml</div>
+      </div>
       <Table></Table>
       <AddBtn></AddBtn>
     </div>
