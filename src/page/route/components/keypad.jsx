@@ -8,8 +8,11 @@ const Keypad = () => {
   return (
     <div>
       <TopBar></TopBar>
-      <div>물</div>
-      <div>키패드로 숫자 입력 ml</div>
+      <div class="titleContainer">
+        <div class="titleName">물</div>
+        <div class="titleA">키패드로 숫자 입력 ml</div>
+      </div>
+
       <Table></Table>
       <AddBtn></AddBtn>
       <KeypadObj></KeypadObj>

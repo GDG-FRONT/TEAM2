@@ -7,8 +7,10 @@ const JuicePage = () => {
   return (
     <div>
       <TopBar></TopBar>
-      <div>우유</div>
-      <div>150ml</div>
+      <div class="titleContainer">
+        <div class="titleName">주스</div>
+        <div class="titleA">150ml</div>
+      </div>
       <Table></Table>
       <AddBtn></AddBtn>
     </div>

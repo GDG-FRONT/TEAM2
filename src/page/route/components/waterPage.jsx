@@ -6,14 +6,16 @@ import '../../../scss/route/titleContainer.scss';
 
 const WaterPage = () => {
   return (
-    <div>
+    <div class="page">
       <TopBar></TopBar>
-      <div className="titleContainer">
+      <div class="titleContainer">
         <div class="titleName">물</div>
         <div class="titleA">150ml</div>
       </div>
-      <Table></Table>
-      <AddBtn></AddBtn>
+      <div class="main">
+        <Table></Table>
+        <AddBtn></AddBtn>
+      </div>
     </div>
   );
 };
