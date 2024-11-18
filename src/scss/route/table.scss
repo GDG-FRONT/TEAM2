@@ -41,6 +41,12 @@
 
     border-radius: 8px;
     border: 1px solid var(--NeutralColor, #d4eced);
+
+    &.selected {
+      border-radius: 8px;
+      background: var(--MainColor, #32dee7);
+      color: white;
+    }
   }
 
   .directAmount {
