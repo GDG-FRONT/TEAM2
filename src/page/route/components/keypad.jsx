@@ -14,7 +14,7 @@ const Keypad = () => {
       </div>
 
       <Table></Table>
-      <AddBtn></AddBtn>
+      <AddBtn isStatic={true}></AddBtn>
       <KeypadObj></KeypadObj>
     </div>
   );
