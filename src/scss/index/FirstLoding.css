@@ -3,10 +3,11 @@
   width: auto;
   height: calc(100vh - 100px);
   background: var(--MainColor, #32DEE7);
+  overflow: hidden; /* 화면 밖으로 나가는 요소를 잘라냄 */
 }
 .loding-background .index-title {
   position: fixed; /* 위치를 고정 */
-  top: 200px; /* 화면 높이의 중앙에 위치 */
+  top: 250px; /* 원하는 위치 지정 */
   left: 50%; /* 화면 너비의 중앙에 위치 */
   transform: translate(-50%, -50%); /* 중앙 정렬 */
   color: var(--ThirdColor, #E9FEFF);
@@ -15,4 +16,36 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+.loding-background .small-siap {
+  position: fixed;
+  top: 63%;
+  left: 50%;
+  display: flex;
+  width: 114.713px;
+  padding: 18.344px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18.344px;
+}
+.loding-background .bottom-wave-w {
+  width: 430px;
+  height: auto;
+  position: fixed;
+  top: 70%; /* 요소를 화면 아래쪽에 배치 */
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  display: flex;
+}
+.loding-background .bottom-wave-b {
+  width: 430px;
+  height: auto;
+  position: fixed;
+  top: 73%; /* 요소를 화면 아래쪽에 배치 */
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  display: flex;
 }
