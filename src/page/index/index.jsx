@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import FirstLoding from './components/FirstLoding';
-import Weight from './components/WeightInput';
-import Weather from './components/Weather';
+import FirstLoding from '../setup/pages/InitialLoadingScreen';
+import Weight from '../setup/pages/WeightInput';
+import Weather from '../setup/pages/WeatherInput';
 import '../../scss/index/FirstLoding.scss';
 
 const Index = () => {

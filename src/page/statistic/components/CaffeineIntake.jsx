@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from "react";
 import "../../../scss/statistic/_statisticCaffeineIntake.scss"; 
 import arrow from '../../../assets/statistic/up_arrow.png'
 
