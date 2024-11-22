@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import cold from '../img/cold.png';
-import common from '../img/common.png';
-import sun from '../img/sun.png';
+import cold from '../../../assets/setup/cold.png';
+import common from '../../../assets/setup/common.png';
+import sun from '../../../assets/setup/sun.png';
 import '../../../scss/index/Weather.scss';
 import { useNavigate } from 'react-router-dom';
 

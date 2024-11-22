@@ -2,8 +2,9 @@ import React, { lazy, Suspense } from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 import Loading from '../components/Loading';
 import Layout from '../layout/Layout';
+import WeightInput from '../page/setup/pages/WeightInput';
 
-const Index = lazy(() => import('../page/index'));
+const Setup = lazy(() => import('../page/setup/InitialSetup'));
 const Main = lazy(() => import('../page/main'));
 const Record = lazy(() => import('../page/record'));
 const Statistic = lazy(() => import('../page/statistic'));
@@ -28,7 +29,7 @@ const router = createBrowserRouter([
         path: '/',
         element: (
           <Suspense fallback={<Loading />}>
-            <Index />
+            <Setup />
           </Suspense>
         ),
       },
@@ -138,6 +139,14 @@ const router = createBrowserRouter([
         element: (
           <Suspense fallback={<Loading />}>
             <MainPage />
+          </Suspense>
+        ),
+      },
+      {
+        path: 'weight-input',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <WeightInput />
           </Suspense>
         ),
       },

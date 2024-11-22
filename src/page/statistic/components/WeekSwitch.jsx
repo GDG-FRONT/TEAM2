@@ -5,7 +5,7 @@ const WeekSwitch = () => {
     const [activeTab, setActiveTab] = useState('일');
 
     return (
-        <div className="container">
+        <div className="weekSwitch-container">
             <div className="tab-container">
                 <button 
                     className={`tab-button ${activeTab === '일' ? 'active' : ''}`}

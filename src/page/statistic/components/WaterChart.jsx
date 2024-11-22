@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from "react";
 import "../../../scss/statistic/_statisticWaterChart.scss"; 
 import chart from '../../../assets/statistic/chart.png'
 
