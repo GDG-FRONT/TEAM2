@@ -18,6 +18,7 @@ const TeaPage = lazy(() => import('../page/route/components/teaPage'));
 const Warning = lazy(() => import('../page/route/components/warning'));
 const Keypad = lazy(() => import('../page/route/components/keypad.jsx'));
 const KeypadObj = lazy(() => import('../page/route/components/keypad-obj.jsx'));
+const MainPage = lazy(() => import('../page/main/components/MainPage.jsx'));
 
 const router = createBrowserRouter([
   {
@@ -129,6 +130,14 @@ const router = createBrowserRouter([
         element: (
           <Suspense fallback={<Loading />}>
             <Warning />
+          </Suspense>
+        ),
+      },
+      {
+        path: 'MainPage',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <MainPage />
           </Suspense>
         ),
       },

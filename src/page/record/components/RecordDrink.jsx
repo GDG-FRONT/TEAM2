@@ -38,17 +38,6 @@ const RecordDrink = () => {
 
     const route = routeMap[drink.text] || '/';
     navigate(route, { state: { drink } });
-    // navigate('/route,', { state: { drink } }); // 여기서는 현지님 작업물로 이동하는 navigate다.
-    // let route = '/defaultPage';
-
-    // if (drink.text === '물') route = '/waterPage';
-    // else if (drink.text === '커피') route = '/coffeePage';
-    // else if (drink.text === '차') route = '/teaPage';
-    // else if (drink.text === '우유') route = '/milkPage';
-    // else if (drink.text === '탄산수') route = '/sodaPage';
-    // else if (drink.text === '쥬스') route = '/juicePage';
-
-    // navigate(route, { state: { drink } });
   };
   //
 
