@@ -3,6 +3,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import Loading from '../components/Loading';
 import Layout from '../layout/Layout';
 import WeightInput from '../page/setup/pages/WeightInput';
+import AgeInput from '../page/setup/pages/AgeInput';
 
 const Setup = lazy(() => import('../page/setup/InitialSetup'));
 const Main = lazy(() => import('../page/main'));
@@ -147,6 +148,14 @@ const router = createBrowserRouter([
         element: (
           <Suspense fallback={<Loading />}>
             <WeightInput />
+          </Suspense>
+        ),
+      },
+      {
+        path: 'Age-input',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <AgeInput />
           </Suspense>
         ),
       },

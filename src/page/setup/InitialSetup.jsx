@@ -4,12 +4,14 @@ import Weight from './pages/WeightInput';
 import Weather from './pages/WeatherInput';
 import ChooseGender from './pages/GenderInput';
 import '../../scss/index/FirstLoding.scss';
+import AGE from './pages/AgeInput';
 
 const Index = () => {
   const [showFirstLoading, setShowFirstLoading] = useState(true);
   const [showWeight, setShowWeight] = useState(false);
   const [showWeather, setShowWeather] = useState(false);
   const [showChooseGender, setShowChooseGender] = useState(false);
+  const [showAge, setShowAge] = useState(false);
 
   useEffect(() => {
     // 2초 후에 FirstLoding(최초 로딩 화면) 상태를 false로 변경
@@ -29,11 +31,14 @@ const Index = () => {
   // 2. 몸무게 선택 완료 -> 나이 선택 창 출력
   const handleWeightDone = () => {
     setShowWeight(false);
-    setShowWeather(true);
+    setShowAge(true);
   };
 
   // 3. 65세 이상인가요? 선택 완료 -> 날씨 선택 창 출력
-
+  const handleAgeDone = () => {
+    setShowAge(false);
+    setShowWeather(true);
+  }
   // 4. 날씨 선택 완료 -> 메인 페이지 출력
 
   
@@ -47,6 +52,8 @@ const Index = () => {
         <ChooseGender onDone={handleGenderDone} />
       ) : showWeight ? (
         <Weight onDone={handleWeightDone} />
+      ) : showAge? (
+        <Age onDone={handleAgeDone} />
       ) : showWeather ? (
         <Weather />
       ) : null}
