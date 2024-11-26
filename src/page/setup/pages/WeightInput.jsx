@@ -1,20 +1,27 @@
+import React, { useState } from "react";
 import '../../../scss/index/_weight.scss';
-import React from 'react';
+import status from '../../../assets/setup/status_page_2.svg';
 
-const Weight = ({ onDone }) => {
-  const handleComplete = () => {
-    if (onDone) onDone(); // onDone 호출
-  };
+const WeightInput = () => {
+  const [weight] = useState("00");
+
 
   return (
-    <div className="weight">
-      <div className="recordText">
-        <div className="title"> 몸무게를 입력해주세요. </div>
-        <div className="subtitle"> 정수로 입력해주세요. </div>{' '}
+    <div className="weight-input-container">
+      <div className="weight_content">
+        <div className="weight_title">몸무게를 입력해주세요</div>
+        <p className="weight_sub">정수로 입력해주세요</p>
+        <div className="weight_info"> {weight} KG </div>
+        <div className="indicator" img = "status"></div>
+        <button className="next-button" disabled>
+          다음
+        </button>
       </div>
-      <button onClick={handleComplete}>완료</button> {/* 버튼 클릭 시 완료 */}
+      <div className="keypad">
+        키패드  
+      </div>
     </div>
   );
 };
 
-export default Weight;
+export default WeightInput;

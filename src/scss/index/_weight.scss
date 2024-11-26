@@ -1,64 +1,78 @@
-// .weight{
-//     background: var(--WhiteColor, #FFF);
-//     align-self: stretch;
-//     color: var(--black, #121212);
-//     text-align: center;
+.weight-input-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f8f8f8;
+}
 
-//     /* sB22 */
-//     font-family: Pretendard;
-//     font-size: 22px;
-//     font-style: normal;
-//     font-weight: 600;
-//     line-height: normal;
-//     text-transform: uppercase;
-// }
-.container {
-    font-family: "Arial, sans-serif";
+.weight_content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .weight_title {
+    color: var(--black, #121212);
     text-align: center;
-    max-width: 400px;
-    margin: auto;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    background-color: #f8f9fa;
-  
-    .titleContainer {
-      margin-bottom: 20px;
-    }
-  
-    .weightDisplay {
-      font-size: 24px;
-      margin-bottom: 20px;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-      padding: 10px;
-      background-color: #fff;
-    }
-  
-    .nextButton {
-      margin-top: 10px;
-      margin-bottom: 20px;
-      padding: 10px 20px;
-      font-size: 16px;
-      background-color: #ddd;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-  
-    .keypad {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
-  
-      .keypadButton {
-        padding: 15px;
-        font-size: 18px;
-        background-color: #f1f1f1;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        cursor: pointer;
-      }
-    }
+
+    /* sB22 */
+    font-family: Pretendard;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
   }
-  
+
+  .weight_sub {
+    color: var(--gray-3, #757575);
+    text-align: center;
+
+    /* M12 */
+    font-family: Pretendard;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  .weight_info {
+    color: var(--black, #121212);
+    text-align: center;
+
+    /* sB20 */
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    }
+
+  .indicator {
+  }
+
+  .next-button {
+    display: flex;
+    height: 48px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 8px;
+    background: var(--gray-2, #BBB);
+  }
+}
+
+.keypad {
+  display: flex;
+  width: 390px;
+  height: 301px;
+  align-items: flex-start;
+  gap: 10px;
+  flex-shrink: 0;
+  background: #FFDADA;   
+}
