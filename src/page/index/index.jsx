@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import FirstLoding from '../setup/pages/InitialLoadingScreen';
 import Weight from '../setup/pages/WeightInput';
+import Age from '../setup/pages/AgeInput';
 import Weather from '../setup/pages/WeatherInput';
 import '../../scss/index/FirstLoding.scss';
 
 const Index = () => {
   const [showFirstLoading, setShowFirstLoading] = useState(true);
   const [showWeight, setShowWeight] = useState(false);
+  const [showAge, setShowAge] = useState(false);
   const [showWeather, setShowWeather] = useState(false);
 
   useEffect(() => {
@@ -32,6 +34,8 @@ const Index = () => {
         </div>
       ) : showWeight ? (
         <Weight onDone={handleWeightDone} />
+      ) : showAge? (
+        <Age onDone={handleAgeDone} />
       ) : showWeather ? (
         <Weather />
       ) : null}
