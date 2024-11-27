@@ -3,6 +3,8 @@ import FirstLoding from './pages/InitialLoadingScreen';
 import Weight from './pages/WeightInput';
 import Weather from './pages/WeatherInput';
 import ChooseGender from './pages/GenderInput';
+import ChooseAge from './pages/SetupAge'
+
 import '../../scss/index/FirstLoding.scss';
 import AGE from './pages/AgeInput';
 
@@ -10,6 +12,7 @@ const Index = () => {
   const [showFirstLoading, setShowFirstLoading] = useState(true);
   const [showWeight, setShowWeight] = useState(false);
   const [showWeather, setShowWeather] = useState(false);
+  const [showChooseAge, setShowChooseAge] = useState(false);
   const [showChooseGender, setShowChooseGender] = useState(false);
   const [showAge, setShowAge] = useState(false);
 
@@ -39,6 +42,7 @@ const Index = () => {
     setShowAge(false);
     setShowWeather(true);
   }
+
   // 4. 날씨 선택 완료 -> 메인 페이지 출력
 
   
@@ -52,8 +56,8 @@ const Index = () => {
         <ChooseGender onDone={handleGenderDone} />
       ) : showWeight ? (
         <Weight onDone={handleWeightDone} />
-      ) : showAge? (
-        <Age onDone={handleAgeDone} />
+      ) : showChooseAge ? (
+        <ChooseAge onDone={handleAgeDone} />
       ) : showWeather ? (
         <Weather />
       ) : null}

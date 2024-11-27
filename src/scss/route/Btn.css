@@ -1,0 +1,57 @@
+.topText {
+  padding: 20px 20px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  align-self: stretch;
+  color: var(--black, #121212);
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.topText img {
+  width: 1rem;
+}
+
+.addContainer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  padding: 27px 20px;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 10px;
+  align-self: stretch;
+}
+.addContainer .add {
+  display: flex;
+  height: 48px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 8px;
+  background: var(--gray-10, #3c3c3c);
+  color: var(--white, #fff);
+  /* sB16 */
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.staticPosition {
+  position: static;
+}
+
+.keyPad {
+  background-color: bisque;
+  height: 100vh;
+}
