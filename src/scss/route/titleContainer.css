@@ -1,0 +1,39 @@
+.page {
+  height: calc(100vh - 100px);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  gap: 10px;
+  text-align: center;
+}
+.titleContainer .titleName {
+  align-self: stretch;
+  color: var(--black, #121212);
+  text-align: center;
+  /* M16 */
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.titleContainer .titleA {
+  color: var(--black, #121212);
+  /* sB22 */
+  font-family: Pretendard;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
